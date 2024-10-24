@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Copy wp-content to a temporary location before the volume is mounted
+mkdir /tmp/wp-content-backup
 cp -R /opt/app-root/src/wp-content /tmp/wp-content-backup
 
 # Check if the volume-mounted wp-content directory is empty
