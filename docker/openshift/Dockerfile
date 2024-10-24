@@ -14,7 +14,4 @@ COPY . /opt/app-root/src
 #RUN chown -R 1001:0 /opt/app-root/src
 #USER 1001
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-
-# CMD will run as argument to entrypoint
 CMD ["/usr/libexec/s2i/run"]
